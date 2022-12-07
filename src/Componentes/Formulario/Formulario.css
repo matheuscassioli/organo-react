@@ -1,0 +1,30 @@
+.formulario {
+    width: 60%;
+    background-color: var(--bgForm);
+    padding: 3rem;
+    margin: 2rem auto;  
+    box-shadow: var(--shadowForm);
+    border-radius: 20px;
+  }
+  
+  .formulario__texto {
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (max-width:900px) { 
+    .formulario{
+      width: 80%;
+    } 
+  }
+
+  @media screen and (max-width:400px) { 
+    .formulario__texto{
+     font-size: 1.5rem;
+    } 
+  }

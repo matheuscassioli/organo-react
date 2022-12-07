@@ -1,0 +1,16 @@
+.botao {
+    font-family: 'Montserrat'; 
+    font-weight: 700;
+    font-size: 13px; 
+    text-align: center;
+    background: var(--bgFooter) ;
+    border-radius: 10px;
+    margin: 16px 0;
+    color: var(--branco);
+    padding: 15px 20px;
+    border: none;
+}
+
+.botao:hover{
+    color: var(--hoverButton);
+}
