@@ -1,18 +1,19 @@
 import React from 'react'
 import "./Colaborador.css"
 
-const Colaborador = (props) =>{
+const Colaborador = ({nome, cargo, corPrimaria, imagem, aoDeletar}) =>{
 
-    const css = { backgroundColor: props.corPrimaria}
+    const css = { backgroundColor: corPrimaria}
 
     return(
         <div className='colaborador'>
+            <button className='delete' onClick={aoDeletar} ></button>
             <div className='cabecalho' style={css}>
-                <img src={props.imagem} alt={props.nome}/>
+                <img src={imagem} alt={nome}/>
             </div>
             <div className='rodape'>
-                <h4>{props.nome}</h4>
-                <h5>{props.cargo}</h5>
+                <h4>{nome}</h4>
+                <h5>{cargo}</h5>
             </div>
         </div>
     )
